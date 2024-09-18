@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM rocker/shiny-verse:4.2.1
+ENV http_proxy="http://nibr-proxy.global.nibr.novartis.net:2011"
 RUN apt-get update && apt-get install -yq \
     libbz2-dev \
     libhdf5-dev \
